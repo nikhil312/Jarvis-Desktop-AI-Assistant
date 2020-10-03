@@ -81,7 +81,18 @@ if __name__ == "__main__":
 
         elif 'open stackoverflow' in query:
             webbrowser.open("stackoverflow.com")   
+            
+        elif "open camera" in query:
+            speak("opening camera sir")
+            os.system('camera')
+            
+        elif 'whatsapp' in query:
+            speak("opening whatsapp") 
+            webbrowser.open_new_tab("https://web.whatsapp.com/")   
 
+        elif 'sleep' in query:
+            speak("you pc is going to sleep mode sir") 
+            os.system('rundll32.exe powrprof.dll,SetSuspendState 0,1,0')    
 
         elif 'play music' in query:
             music_dir = "C:\\Users\\91817\\Downloads\\"
